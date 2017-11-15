@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/FontAwesome.otf" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<div id="calculator">
+		<div id="input">
+			<div class="step hide-after-guess">
+				<div class="step-title">Step 1: Enter your wealth in rupees.</div>
+				<div class="step-desc">Take the value of everything you own, and subract from that the value of everything you owe. Obviously, you may have to estimate.</div>
+			</div>
+			<div class="hide-after-guess" id="wealth">
+				<div class="units">INR</div><input type="number" />
+			</div>
+			<div class="step hide-after-guess">
+				<div class="step-title">Step 2: Guess how wealthy you are compared to other Indians.</div>
+				<div class="step-desc">The wealthiest Indian is at 100; the poorest is at 0; and the Indian of median wealth is at 50.</div>
+			</div>
+			<div id="range">
+				<div class="instructions hide-after-guess">&larr; DRAG &rarr;</div>
+			</div>
+
+			<div class="instructions hide-after-guess">You must enter your wealth (Step 1) before guessing.</div>
+			<div id="guess" class="hide-after-guess inactive">Guess</div>
+		</div>
+		
+		<div id="output" style="display: none;">
+			<div class="output-title"></div>
+			<div class="output-sentence"></div>
+			<div class="play-again"><i class="fa fa-repeat" aria-hidden="true"></i> Play again</div>
+		</div>
+	</div>
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://unpkg.com/d3-marcon@2.0.2/build/d3-marcon.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/jeezy@1.12.5/lib/jeezy.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>

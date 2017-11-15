@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+}
+#calculator {
+	max-width: 824px;
+}
+#wealth, #guess, .step {
+	margin: 10px 0px;
+}
+.step .step-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 1.5em;
+}
+.step .step-desc {
+	color: #666;
+}
+#output, .instructions {
+	margin: 0px;
+}
+.instructions {
+	color: #666;
+	font-size: .8em;
+	/*margin: 0px 50px;*/
+	text-align: center;
+}
+#wealth .units {
+	position: absolute;
+	font-size: 2em;
+}
+#wealth input {
+	/* Firefox */
+	width: -moz-calc(100% - 65px);
+	/* WebKit */
+	width: -webkit-calc(100% - 65px);
+	/* Opera */
+	width: -o-calc(100% - 65px);
+	/* Standard */
+	width: calc(100% - 65px);
+	margin-bottom: 50px;
+	margin-top: -1px;
+	-webkit-appearance: none;
+  background-color: white;
+  user-select: text;
+  cursor: auto;
+  border-style: none;
+  border-image: none;
+  border-radius: 0px;
+  border-bottom: 1px dotted black;
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 65px;
+}
+#wealth input:focus {
+	border-bottom: 2px solid #45b29d;
+	outline: none;
+	margin-bottom: 49px;
+}
+#guess {
+	text-align: center;
+	background: #45b29d;
+	padding: 20px;
+	color: white;
+	font-size: 2em;
+}
+#guess.inactive {
+	opacity: .6;
+	cursor: not-allowed;
+}
+#guess.active {
+	cursor: pointer;
+}
+#range {
+	margin-bottom: 20px;
+}
+#range .range-body {
+	fill: #333;
+}
+#range .range-dragger {
+	fill: #df5a49;
+	cursor: pointer;
+}
+#range .range-label {
+	fill: #fff;
+	text-anchor: middle;
+	font-size: 2em;
+	pointer-events: none;
+}
+#range .tick {
+	text-anchor: middle;
+	font-size: .9em;
+	/*fill: #888;*/
+}
+
+#range .result-rect, #range .result-flag {
+	fill: #df9349;
+}
+#range .result-flag-label {
+	fill: #fff;
+	text-anchor: middle;
+	font-size: .9em;
+}
+.orange-color {
+	color: #df9349;
+}
+.red-color {
+	color: #df5a49;
+}
+
+#output .output-sentence {
+	font-size: 1.5em;
+}
+#output .output-title {
+	margin-top: 40px;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#output .play-again {
+	font-size: 1.5em;
+	color: #666;
+	cursor: pointer;
+	margin: 0 auto;
+	display: table;
+}
+#output .play-again:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+	#wealth .units {
+		font-size: 1.1em;
+	}
+	#wealth input {
+		margin-bottom: 20px;
+		margin-top: -3px;
+		font-size: 1.1em;
+		padding-left: 40px;
+		/* Firefox */
+		width: -moz-calc(100% - 40px);
+		/* WebKit */
+		width: -webkit-calc(100% - 40px);
+		/* Opera */
+		width: -o-calc(100% - 40px);
+		/* Standard */
+		width: calc(100% - 40px);
+	}
+	#wealth input:focus {
+		margin-bottom: 19px;
+	}
+	#guess {
+		width: 100%;
+		font-size: 1.2em;
+	}
+	.step .step-title {
+		font-size: 1.1em;
+	}
+	.step .step-desc  {
+		font-size: .8em;
+	}
+	#range .range-label {
+		font-size: 1.2em;
+	}
+
+	#output .output-title {
+		font-size: 1.2em;
+	}
+	#output .output-sentence {
+		font-size: 1em;
+	}
+	#output .play-again {
+		font-size: 1em;
+	}
+}
