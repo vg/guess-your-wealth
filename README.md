@@ -1,4 +1,4 @@
-#guess-your-wealth
+# guess-your-wealth
 
 - **Headline**: Compared to other Indians, how wealthy are you?
 - **Description**: Guess where you fit on the country’s wealth spectrum.
